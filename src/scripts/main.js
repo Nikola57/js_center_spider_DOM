@@ -7,8 +7,8 @@ if (wall && spider) {
   const wallRect = wall.getBoundingClientRect();
   const spiderRect = spider.getBoundingClientRect();
 
-  const centerX = (wallRect.width - spiderRect.width - 10) / 2;
-  const centerY = (wallRect.height - spiderRect.height - 10) / 2;
+  const centerX = (wallRect.width - spiderRect.width) / 2;
+  const centerY = (wallRect.height - spiderRect.height) / 2;
 
   spider.style.position = 'absolute';
   spider.style.left = `${centerX}px`;
